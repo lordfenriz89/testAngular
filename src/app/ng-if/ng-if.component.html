@@ -1,0 +1,35 @@
+<div class="container  bg-dark text-center text-white my-4 py-4">ngif show= {{show}}> </div>
+  
+
+<div class="container">
+  <button class="btn btn-primary "(click)="show= !show">acción</button>
+  <p class="text-info" *ngIf="show; else showDos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ratione qui corporis corrupti 
+    asperiores laboriosam exercitationem quam quibusdam officiis in!</p>
+
+    <ng-template #showDos>
+      <p class="text-danger ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia facilis doloribus 
+        laboriosam molestiae iste, eaque voluptatem maiores minus doloremque,
+         exercitationem voluptatibus ducimus sapiente natus omnis ullam aspernatur aperiam odit dolor.
+      </p>
+
+    </ng-template >
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let curso of cursos; idex as i "></tr>
+          <th scope="row">{{i}}</th>
+          <td>{{tipo}}</td>
+          <td>{{nombre}}</td>
+          <td>{{precio}}</td>
+
+        </tbody>
+      </table>
+  </div>

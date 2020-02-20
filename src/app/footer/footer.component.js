@@ -7,18 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = /** @class */ (function () {
-    function AppComponent() {
-        this.title = 'LEGAL NOW';
-        this.show = true;
+var FooterComponent = /** @class */ (function () {
+    function FooterComponent() {
     }
-    AppComponent = __decorate([
+    FooterComponent.prototype.ngOnInit = function () {
+    };
+    FooterComponent = __decorate([
         core_1.Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
+            selector: 'app-footer',
+            templateUrl: './footer.component.html',
+            styleUrls: ['./footer.component.css']
         })
-    ], AppComponent);
-    return AppComponent;
+    ], FooterComponent);
+    return FooterComponent;
 }());
-exports.AppComponent = AppComponent;
+exports.FooterComponent = FooterComponent;

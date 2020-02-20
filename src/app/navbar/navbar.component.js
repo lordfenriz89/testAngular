@@ -7,18 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = /** @class */ (function () {
-    function AppComponent() {
-        this.title = 'LEGAL NOW';
-        this.show = true;
+var NavbarComponent = /** @class */ (function () {
+    function NavbarComponent() {
     }
-    AppComponent = __decorate([
+    NavbarComponent.prototype.ngOnInit = function () {
+    };
+    NavbarComponent = __decorate([
         core_1.Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
+            selector: 'app-navbar',
+            templateUrl: './navbar.component.html',
+            styleUrls: ['./navbar.component.css']
         })
-    ], AppComponent);
-    return AppComponent;
+    ], NavbarComponent);
+    return NavbarComponent;
 }());
-exports.AppComponent = AppComponent;
+exports.NavbarComponent = NavbarComponent;
